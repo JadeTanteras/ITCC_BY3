@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miss Jade So Bank</title>
+  <link rel="stylesheet" href="PAYROLL.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Employee Management</h1>
+    <p>MISS JADE SO BANKING INSTITUTE</p>
+  </div>
+
+  <div class="form-container">
+    <h3>Add New Employee</h3>
+    <form id="addEmployeeForm">
+      <input type="text" id="empId" placeholder="Employee ID" required>
+      <input type="text" id="empName" placeholder="Employee Name" required>
+      <input type="text" id="empDept" placeholder="Department" required>
+      <button type="submit" class="btn">Add Employee</button>
+    </form>
+  </div>
+
+  <div class="table-container">
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>ID#</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0001</td>
+          <td>Employee 1</td>
+          <td>Marketing</td>
+          <td>
+            <button class="edit-btn">✏️</button>
+            <button class="delete-btn">🗑️</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="button-container">
+    <a href="PAYROLLSTUB.html" class="btn">Go to Payroll Stub →</a>
+  </div>
+
+  <script src="PAYROLL.js"></script>
+</body>
+</html>

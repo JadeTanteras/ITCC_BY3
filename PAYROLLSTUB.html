@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYROLL CASH-OUT</title>
+  <link rel="stylesheet" href="PAYROLL.css">
+</head>
+<body>
+  <div class="header">
+    <h1>MISS JADE SO BANKING INSTITUTE</h1>
+    <p>pera mo, pera ko!</p>
+  </div>
+
+  <div class="form-container">
+    <h3>Add New Paystub</h3>
+    <form id="addStubForm">
+      <input type="text" id="stubId" placeholder="Employee ID" required>
+      <input type="text" id="stubName" placeholder="Employee Name" required>
+      <input type="number" id="stubHours" placeholder="Total Hours" required>
+      <input type="number" id="stubPay" placeholder="Pay Amount" required>
+      <button type="submit" class="btn">Add Paystub</button>
+    </form>
+  </div>
+
+  <div class="table-container">
+    <table id="stubTable">
+      <thead>
+        <tr>
+          <th>ID#</th>
+          <th>Name</th>
+          <th>Total Hours</th>
+          <th>Pay</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0001</td>
+          <td>Employee 1</td>
+          <td>42</td>
+          <td>$1,000</td>
+          <td>
+            <button class="edit-btn">✏️</button>
+            <button class="delete-btn">🗑️</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="button-container">
+    <a href="PAYROLL.html" class="btn">← Back to Dashboard</a>
+  </div>
+
+  <script src="PAYROLL.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  cursor: none;
+}
+
+/* Header */
+.header {
+  background: #0a2342;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Tables */
+.table-container {
+  width: 95%;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #0a2342;
+  color: white;
+}
+
+/* Form */
+.form-container {
+  width: 95%;
+  margin: 20px auto;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Cursor money animation */
+.money {
+  position: fixed;
+  font-size: 18px;
+  animation: float 1s ease-out forwards;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes float {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-50px); opacity: 0; }
+}
